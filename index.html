@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TReact Final</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="root">
+      <div class="nav__mobile--links--container" style="display: none">
+        <div class="nav__mobile--links">
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Pricing</li>
+            <li>Contact Us</li>
+            <li>Login</li>
+            <li class="signup__button">Sign Up</li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navigation">
+        <a href="/" class="nav__left">
+          <figure class="nav__logo--wrapper">
+            <img src="./assets/TreactLogo.svg" alt="TReact-Logo" />
+          </figure>
+          Treact
+        </a>
+        <button
+          class="nav__right--mobile menu-button"
+          onclick="menuToggle()"
+          type="button"
+          >
+          <i class="fa-solid fa-bars menu-open" style="display: block"></i>
+          <i class="fa-solid fa-x menu-close" style="display: none"></i>
+        </button>
+        <div class="nav__right--desktop">
+          <ul>
+            <li>
+              <a href="/" class="nav__links">About</a>
+            </li>
+            <li>
+              <a href="/" class="nav__links">Blog</a>
+            </li>
+            <li>
+              <a href="/" class="nav__links">Pricing</a>
+            </li>
+            <li>
+              <a href="/" class="nav__links">Contact Us</a>
+            </li>
+          </ul>
+          <div class="auth__buttons">
+            <button class="auth__button--login nav__links">Login</button>
+            <button class="auth__button--signup button__hover">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero__left">
+          <div class="hero__left-top">
+            <h1 class="hero__content--title">
+              Beautiful React Templates
+              <span class="purple--highlights"> for you.</span>
+            </h1>
+            <p class="hero__content_para">
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages components
+            </p>
+            <div class="hero__input--wrapper">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email Address"
+                class="hero__input--field"
+              />
+              <button type="button" class="hero__cta button__hover">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="hero__left-bottom">
+            <p class="hero__subtext">OUR TRUSTED CUSTOMERS</p>
+            <img src="./assets/customers.png" alt="Our customers" />
+          </div>
+        </div>
+        <div class="hero__right">
+          <img src="./assets/hero-img.svg" alt="Hero Image" />
+        </div>
+      </section>
+      <!-- FEATURES -->
+      <section class="section__wrapper">
+        <h3 class="section__title">Features</h3>
+        <h2 class="section__subtitle features__subtitle">
+          We have Amazing <span class="purple--highlight">Service.</span>
+        </h2>
+        <p class="section__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+          quaerat!
+        </p>
+        <div class="features__items">
+          <div class="feature__item">
+            <div class="feature__icon--wrapper">
+              <img src="./assets/secure-icon.svg" alt="Secure Feature Icon" />
+            </div>
+            <div class="feature__content">
+              <div class="feature__content--title">Secure</div>
+              <div class="feature__content--text">
+                We strictly only deal with vendors that provide top notch
+                security.
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon--wrapper">
+              <img
+                src="./assets/support-icon.svg"
+                alt="24/7 Support Feature Icon"
+              />
+            </div>
+            <div class="feature__content">
+              <div class="feature__content--title">24/7 Support</div>
+              <div class="feature__content--text">
+                We strictly only deal with vendors that provide top notch
+                security.
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon--wrapper">
+              <img
+                src="./assets/customize-icon.svg"
+                alt="Customizable Feature Icon"
+              />
+            </div>
+            <div class="feature__content">
+              <div class="feature__content--title">Customizable</div>
+              <div class="feature__content--text">
+                We strictly only deal with vendors that provide top notch
+                security.
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon--wrapper">
+              <img
+                src="./assets/reliable-icon.svg"
+                alt="Reliable Feature Icon"
+              />
+            </div>
+            <div class="feature__content">
+              <div class="feature__content--title">Reliable</div>
+              <div class="feature__content--text">
+                We strictly only deal with vendors that provide top notch
+                security.
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon--wrapper">
+              <img src="./assets/fast-icon.svg" alt="Fast Feature Icon" />
+            </div>
+            <div class="feature__content">
+              <div class="feature__content--title">Fast</div>
+              <div class="feature__content--text">
+                We strictly only deal with vendors that provide top notch
+                security.
+              </div>
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon--wrapper">
+              <img src="./assets/simple-icon.svg" alt="Easy Feature Icon" />
+            </div>
+            <div class="feature__content">
+              <div class="feature__content--title">Easy</div>
+              <div class="feature__content--text">
+                We strictly only deal with vendors that provide top notch
+                security.
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/feature-blob.svg" alt="feature__blob" />
+      </section>
+      <!-- QUALITY WORK -->
+      <section class="section__wrapper work__wrapper">
+        <div class="section__content--wrapper">
+          <h3 class="section__title">QUALITY WORK</h3>
+          <h2 class="section__subtitle">
+            Designed &amp; Developed by
+            <span class="purple--highlight">Professionals.</span>
+          </h2>
+          <p class="section__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            quaerat!
+          </p>
+          <button type="button" class="section__cta button__hover">
+            Learn More
+          </button>
+        </div>
+        <figure class="work__image--wrapper">
+          <img src="./assets/hero-screenshot.png" alt=" Hero screenshot" />
+        </figure>
+        <!-- TODO: Fix blob import -->
+        <!-- <img src="./assets/work-blob.svg" alt="blob"> -->
+      </section>
+      <section class="section__wrapper steps__wrapper">
+        <div class="section__content--wrapper">
+          <div class="section__content"></div>
+          <h3 class="section__title">Steps</h3>
+          <h2 class="section__subtitle">
+            "Easy to"
+            <span class="purple--highlight">Get Started.</span>
+          </h2>
+          <ul class="steps__list">
+            <li>
+              <div class="step__number">01</div>
+              <div class="step__content">
+                <h6 class="step__title">Register</h6>
+                <p class="step__description">
+                  Create an account with us using Google or Facebook.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="step__number">02</div>
+              <div class="step__content">
+                <h6 class="step__title">Download</h6>
+                <p class="step__description">
+                  Browse and Download the template that you like from the
+                  marketplace.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="step__number">03</div>
+              <div class="step__content">
+                <h6 class="step__title">Run</h6>
+                <p class="step__description">
+                  Follow the instructions to setup and customize the template to
+                  your needs.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <figure class="steps__image--wrapper">
+          <img
+            src="./assets/hero-screenshot-laptop.png"
+            alt="Laptop display screenshot"
+          />
+        </figure>
+        <!-- TODO: fix this blob -->
+        <!-- <img src="./assets/steps-blob.svg" alt="" class="steps__blob"> -->
+      </section>
+      <section class="section__wrapper values__wrapper">
+        <div class="section__content--wrapper">
+          <h3 class="section__title">Values</h3>
+          <h2 class="section__subtitle">
+            We Always Abide by Our
+            <span class="purple--highlight">Principles.</span>
+          </h2>
+          <p class="section__content values__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eius
+            eligendi possimus nulla nam eaque commodi harum repellendus quae
+            impedit.
+          </p>
+          <div class="values__features">
+            <div class="vaules__features">
+              <div class="values__feature--title">
+                <div
+                  class="values__feature--icon-affordable values__feature--icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-dollar-sign"
+                  >
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path
+                      d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    ></path>
+                  </svg>
+                </div class="affordable__text">
+                Affordable
+              </div>
+              <div class="values__feature--content">
+                We promise to offer you the best rate we can - at par with the
+                industry standard.
+              </div>
+              <div class="bpmslc">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-briefcase"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+            </div>
+                <div>
+                  Professionalism
+                </div>
+                <div class="values__feature--professionalism">
+                    We assure you that our templates are designed and created by professional designers.
+                </div>
+                <button type="button" class="section__cta button__hover">
+                    Learn More
+                  </button>
+              </div>
+              <div>
+                    <h5 class="pricing">PRICING</h5>
+            </div>
+            <div>
+                <h1 class="Reasonable__flexible">Reasonable &
+                  <br>  Flexible <span class="purple--highlight-plans">Plans</span></h1>
+            </div>
+            <div>
+                <p class="Reasonable__flexible--para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur esse enim accusamus nemo voluptatem laborum explicabo. Saepe, atque voluptatibus?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
