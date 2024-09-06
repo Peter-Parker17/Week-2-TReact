@@ -1606,6 +1606,22 @@
         align-items: center;
     }
 
+    .SocialMedia__LOGOs {
+        display: flex;
+    }
+
+    .hCMBWt {
+        height: 16px;
+        width: 16px;
+        margin-right: 16px;
+        cursor: pointer;
+        border-radius: 9999px;
+        background-color: rgb(247 250 252 / var(--tw-bg-opacity));
+        color: rgb(26 32 44 / var(--tw-text-opacity));
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-duration: 300ms;
+    }
+
     p {
         margin: 0px;
     }
