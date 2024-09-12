@@ -24,8 +24,33 @@
         overflow-x: hidden;
     }
         @media (min-width: 1024px) {
-            .root {
-            /* max-width: 1280px; */
+            .root, .values__priciples {
+            max-width: 1280px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+    }
+
+    @media (min-width: 440px) {
+        .nav__mobile--links--container, .nav__mobile--links {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    @media (max-width: 786px) {
+        .root, .values__priciples {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
         }
     }
 
@@ -92,12 +117,21 @@
             display: flex;
             gap: 72;
         }
+
+    }
+
+    @media (min-width: 768px) {
+        .nav__right--mobile {
+            display: none;
+        }
     }
 
     .nav__mobile--links--container {
+        display: flex;
+        justify-content: flex-end;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
         padding: 24px 16px;
         z-index: 10;
@@ -357,6 +391,7 @@
         width: 160px;
         margin: 8px;
     }
+
 }
 
     @media (min-width: 1024px) {
@@ -609,6 +644,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 40px;
+        justify-content: space-around;
     }
 
     .feature__item {
@@ -937,6 +973,7 @@
         /* flex-wrap: wrap; */
         /* margin-top: 25px; */
     }
+
 
     /* PLANS */
 
@@ -1391,12 +1428,17 @@
         display: flex;
         max-width: 50%;
         padding-left: 50px;
-        /* margin-top: 24px; */
+    }
+
+    .fuImxS {
+        display: flex;
+        max-width: 50%;
+        padding-left: 50px;
+        border-color: white;
     }
 
     .contact__us {
-        max-width: 100%;
-        background-color: rgb(247 250 252 / var(--tw-border-opacity));
+        display: flex;
     }
 
     .hmfpka:first-child {
@@ -1627,5 +1669,54 @@
     }
 
     .iFNfwT {
+
+    }
+
+    @media (max-width: 768px) {
+
+        .DIVMAINTReactLogo__FOOTER__Rights__logos, .iKlRYw, .coJPtL {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 435px) {
+        .FOOTERMAINTReactLogo__FOOTER__Rights__logos, 
+        .hgIwoE, 
+        .coJPtL, 
+        .features__items, 
+        .ThreePlans__PlansContainer, 
+        .section__content--wrapper,
+        .Values__priciples--para,
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        body, .Values__priciples--para, 
+        p {
+        display: flex;
+        align-items: stretch;
+        margin: 0 auto;
+        max-width: 100%;
+        /* padding: -70%; */
+        /* border: 100px; */
+    }
+
+    p,
+    h1,
+    h5,
+    div {
+        font-size: 24px;
+    }
+
+    ul {
+        display: none;
+    }
 
     }
